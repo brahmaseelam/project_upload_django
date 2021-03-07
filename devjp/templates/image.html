@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images upload</title>
+</head>
+<body>
+{% for img in post %}
+<h1>{{img.title}}</h1>
+<img src="{{img.image_field.url}}">
+<h1>{{img.description}}</h1>
+{% endfor %}
+
+</body>
+</html>

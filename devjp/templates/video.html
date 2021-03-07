@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download</title>
+</head>
+<body>
+{% for song in songs %}
+<!--<audio controls>-->
+<!--    <source src="{{ song.songs.url }}" type="audio/mpeg">-->
+<!--    Your browser does not support audio-->
+<!--    <h1>{{song.title}}</h1>-->
+<!--</audio>-->
+<div>
+<video width="300" height="300" controls >
+<source src="{{song.songs.url}}" type="video/mp4">
+</video>
+    <h1>{{song.title}}</h1>
+</div>
+{% endfor %}
+</body>
+</html>
